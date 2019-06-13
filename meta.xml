@@ -1,7 +1,7 @@
 <meta>
-	<info author='Huarycane' version='1.0.3' type='script'></info>
+	<info author='DorteY(Lorenzo)' version='1.0.5' type='script'></info>
 	
-	<script src='HUD.lua' type='client' cache='false'/>
+	<script src='client.lua' type='client' cache='false'/>
 	
 	<file src='images/ARMOR.png'/>
 	<file src='images/HEALTH.png'/>
