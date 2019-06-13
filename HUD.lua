@@ -39,14 +39,14 @@ function SelfmadeHUD()
 		dxDrawText("Oxygen • "..math.floor(oxygen/10).." %", 3450*sx,92*sy,100*sx,15*sy,tocolor(255,255,255,255),1.50,"default-bold","center",_,_,_,_,_,_)
 	end
 	
-	dxDrawRectangle(1600*sx, 140*sy, 300*sx, 50*sy, tocolor(0, 0, 0, 120),false)--MONEY Bar
-	dxDrawRectangle(1660*sx, 144*sy, 235*sx, 42*sy, tocolor(100, 100, 100, 200),true)--MONEY Progress
-	dxDrawImage(1605*sx, 144*sy, 47*sx, 43*sy, "images/MONEY.png", 0, 0, 0, tocolor(255, 255, 255, 255))
+	dxDrawRectangle(1600*sx,140*sy,300*sx,50*sy,tocolor(0,0,0,120),false)--MONEY Bar
+	dxDrawRectangle(1660*sx,144*sy,235*sx,42*sy,tocolor(100,100,100,200),true)--MONEY Progress
+	dxDrawImage(1605*sx,144*sy,47*sx,43*sy,"images/MONEY.png",0,0,0,tocolor(255, 255, 255, 255))
 	local playerMoney=convertMoneyToString(getPlayerMoney(localPlayer))
-	dxDrawText("$ "..playerMoney, 3450*sx, 152*sy, 100*sx, 15*sy, tocolor(255, 255, 255, 255), 1.50, "default-bold", "center",_,_,_,_,_,_)
+	dxDrawText("$ "..playerMoney,3450*sx,152*sy,100*sx,15*sy,tocolor(255, 255, 255, 255),1.50,"default-bold","center",_,_,_,_,_,_)
 	
 	local weaponID = getPedWeapon (lp)
-	dxDrawImage(1460*sx, 20*sy, 100*sx, 100*sy,"images/WEAPONS/"..tostring(weaponID)..".png",0.0,0.0,0.0,tocolor(255,255,255,200),false)
+	dxDrawImage(1460*sx,20*sy,100*sx,100*sy,"images/WEAPONS/"..tostring(weaponID)..".png",0.0,0.0,0.0,tocolor(255,255,255,200),false)
 	if getPedTotalAmmo(lp)>1 then
 		dxDrawText(getPedAmmoInClip(lp).." | "..getPedTotalAmmo(lp)-getPedAmmoInClip(lp),2920*sx,120*sy,100*sx,15*sy,tocolor(255,255,225,255),1.30,"default-bold","center",_,_,_,_,_,_)
 	end
