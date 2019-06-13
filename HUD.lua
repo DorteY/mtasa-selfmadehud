@@ -34,7 +34,7 @@ function SelfmadeHUD()
 		dxDrawRectangle(1660*sx,84*sy,armor*sx,42*sy,tocolor(0,200,200,200),true)--Armor Progress
 		dxDrawImage(1605*sx,82*sy,47*sx,45*sy,"images/ARMOR.png",0,0,0,tocolor(255, 255, 255, 255))
 		dxDrawText("Armor • "..armor.." %", 3450*sx,92*sy,100*sx,15*sy,tocolor(255, 255, 255, 255),1.50,"default-bold","center",_,_,_,_,_,_)--Armor Text
-	elseif isElementInWater(lp)then
+	else
 		dxDrawRectangle(1600*sx,80*sy,300*sx,50*sy,tocolor(0,0,0,120),false)--Oxygen Bar
 		dxDrawRectangle(1660*sx,84*sy,572/2430*oxygen,42*sy,tocolor(0,200,200,200),true)--Oxygen Progress
 		dxDrawImage(1605*sx,82*sy,47*sx,45*sy,"images/OXYGEN.png",0,0,0,tocolor(255,255,255,255))
