@@ -20,20 +20,18 @@ function SelfmadeHUD()
 	local health=235/100*health
 	local armor=235/100*armor
 	
-	local health=math.floor(getElementHealth(lp))
-	local armor=math.floor(getPedArmor(lp))
 	local weaponID=getPedWeapon(lp)
 
 	dxDrawRectangle(1600*sx,20*sy,300*sx,50*sy,tocolor(0,0,0,120),false)--Health Bar
 	dxDrawRectangle(1660*sx,24*sy,health*sx,42*sy,tocolor(200,0,0,200),true)--Health Progress
 	dxDrawImage(1605*sx,22*sy,47*sx,47*sy,"images/HEALTH.png",0,0,0,tocolor(255,255,255,255))
-	dxDrawText("Health • "..health.." %",3450*sx,32*sy,100*sx,15*sy,tocolor(255,255,255,255),1.50,"default-bold","center",_,_,_,_,_,_)--Health Text
+	dxDrawText("Health • "..math.floor(health).." %",3450*sx,32*sy,100*sx,15*sy,tocolor(255,255,255,255),1.50,"default-bold","center",_,_,_,_,_,_)--Health Text
 	
 	if not isElementInWater(lp)then
 		dxDrawRectangle(1600*sx,80*sy,300*sx,50*sy,tocolor(0,0,0,120),false)--Armor Bar
 		dxDrawRectangle(1660*sx,84*sy,armor*sx,42*sy,tocolor(0,200,200,200),true)--Armor Progress
 		dxDrawImage(1605*sx,82*sy,47*sx,45*sy,"images/ARMOR.png",0,0,0,tocolor(255, 255, 255, 255))
-		dxDrawText("Armor • "..armor.." %", 3450*sx,92*sy,100*sx,15*sy,tocolor(255, 255, 255, 255),1.50,"default-bold","center",_,_,_,_,_,_)--Armor Text
+		dxDrawText("Armor • "..math.floor(armor).." %", 3450*sx,92*sy,100*sx,15*sy,tocolor(255, 255, 255, 255),1.50,"default-bold","center",_,_,_,_,_,_)--Armor Text
 	else
 		dxDrawRectangle(1600*sx,80*sy,300*sx,50*sy,tocolor(0,0,0,120),false)--Oxygen Bar
 		dxDrawRectangle(1660*sx,84*sy,572/2430*oxygen,42*sy,tocolor(0,200,200,200),true)--Oxygen Progress
