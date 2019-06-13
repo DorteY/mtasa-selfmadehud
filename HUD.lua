@@ -55,11 +55,11 @@ addEventHandler("onClientRender",root,SelfmadeHUD)
 
 --Dont edit this
 function convertMoneyToString(money)
-    local formatted = money
+    local formatted=money
     while true do  
-        formatted, k = string.gsub(formatted, "^(-?%d+)(%d%d%d)", '%1,%2')
+        formatted,k=string.gsub(formatted,"^(-?%d+)(%d%d%d)",'%1,%2')
         if k==0 then break end
     end
-    formatted = tostring(formatted)
+    formatted=tostring(formatted)
     return formatted
 end
