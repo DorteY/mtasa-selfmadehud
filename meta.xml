@@ -1,0 +1,54 @@
+<meta>
+	<info author='Huarycane' version='1.0.3' type='script'></info>
+	
+	<script src='HUD.lua' type='client' cache='false'/>
+	
+	<file src='images/ARMOR.png'/>
+	<file src='images/HEALTH.png'/>
+	<file src='images/MONEY.png'/>
+	<file src='images/OXYGEN.png'/>
+	
+	<file src='images/WEAPONS/0.png'/>
+	<file src='images/WEAPONS/1.png'/>
+	<file src='images/WEAPONS/2.png'/>
+	<file src='images/WEAPONS/3.png'/>
+	<file src='images/WEAPONS/4.png'/>
+	<file src='images/WEAPONS/5.png'/>
+	<file src='images/WEAPONS/6.png'/>
+	<file src='images/WEAPONS/7.png'/>
+	<file src='images/WEAPONS/8.png'/>
+	<file src='images/WEAPONS/9.png'/>
+	<file src='images/WEAPONS/10.png'/>
+	<file src='images/WEAPONS/11.png'/>
+	<file src='images/WEAPONS/12.png'/>
+	<file src='images/WEAPONS/14.png'/>
+	<file src='images/WEAPONS/15.png'/>
+	<file src='images/WEAPONS/16.png'/>
+	<file src='images/WEAPONS/17.png'/>
+	<file src='images/WEAPONS/18.png'/>
+	<file src='images/WEAPONS/22.png'/>
+	<file src='images/WEAPONS/23.png'/>
+	<file src='images/WEAPONS/24.png'/>
+	<file src='images/WEAPONS/25.png'/>
+	<file src='images/WEAPONS/26.png'/>
+	<file src='images/WEAPONS/27.png'/>
+	<file src='images/WEAPONS/28.png'/>
+	<file src='images/WEAPONS/29.png'/>
+	<file src='images/WEAPONS/30.png'/>
+	<file src='images/WEAPONS/31.png'/>
+	<file src='images/WEAPONS/32.png'/>
+	<file src='images/WEAPONS/33.png'/>
+	<file src='images/WEAPONS/34.png'/>
+	<file src='images/WEAPONS/35.png'/>
+	<file src='images/WEAPONS/36.png'/>
+	<file src='images/WEAPONS/37.png'/>
+	<file src='images/WEAPONS/38.png'/>
+	<file src='images/WEAPONS/39.png'/>
+	<file src='images/WEAPONS/40.png'/>
+	<file src='images/WEAPONS/41.png'/>
+	<file src='images/WEAPONS/42.png'/>
+	<file src='images/WEAPONS/43.png'/>
+	<file src='images/WEAPONS/44.png'/>
+	<file src='images/WEAPONS/45.png'/>
+	<file src='images/WEAPONS/46.png'/>
+</meta>
