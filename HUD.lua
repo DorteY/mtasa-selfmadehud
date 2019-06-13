@@ -23,7 +23,7 @@ function SelfmadeHUD()
 	dxDrawRectangle(1600*sx,20*sy,300*sx,50*sy,tocolor(0,0,0,120),false)--HEALTH Bar
 	dxDrawRectangle(1660*sx,24*sy,health*sx,42*sy,tocolor(200,0,0,200),true)--HEALTH Progress
 	dxDrawImage(1605*sx,22*sy,47*sx,47*sy,"images/HEALTH.png",0,0,0,tocolor(255,255,255,255))
-	local health = math.floor (getElementHealth (lp))
+	local health=math.floor (getElementHealth (lp))
 	dxDrawText("Health • "..health.." %",3450*sx,32*sy,100*sx,15*sy,tocolor(255,255,255,255),1.50,"default-bold","center",_,_,_,_,_,_)
 	
 	if not isElementInWater(lp)then
@@ -45,7 +45,7 @@ function SelfmadeHUD()
 	local playerMoney=convertMoneyToString(getPlayerMoney(localPlayer))
 	dxDrawText("$ "..playerMoney,3450*sx,152*sy,100*sx,15*sy,tocolor(255, 255, 255, 255),1.50,"default-bold","center",_,_,_,_,_,_)
 	
-	local weaponID = getPedWeapon (lp)
+	local weaponID=getPedWeapon(lp)
 	dxDrawImage(1460*sx,20*sy,100*sx,100*sy,"images/WEAPONS/"..tostring(weaponID)..".png",0.0,0.0,0.0,tocolor(255,255,255,200),false)
 	if getPedTotalAmmo(lp)>1 then
 		dxDrawText(getPedAmmoInClip(lp).." | "..getPedTotalAmmo(lp)-getPedAmmoInClip(lp),2920*sx,120*sy,100*sx,15*sy,tocolor(255,255,225,255),1.30,"default-bold","center",_,_,_,_,_,_)
